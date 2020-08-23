@@ -12,6 +12,10 @@
 		38979F1C24050B0F00B5D725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38979F1A24050B0F00B5D725 /* Main.storyboard */; };
 		38979F1E24050B1100B5D725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38979F1D24050B1100B5D725 /* Assets.xcassets */; };
 		38979F2124050B1100B5D725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38979F1F24050B1100B5D725 /* LaunchScreen.storyboard */; };
+		38979F2A24050B9E00B5D725 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38979F2924050B9E00B5D725 /* PlayingCard.swift */; };
+		38979F2C240511C100B5D725 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38979F2B240511C100B5D725 /* PlayingCardDeck.swift */; };
+		38979F2E2405182F00B5D725 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38979F2D2405182F00B5D725 /* PlayingCardView.swift */; };
+		85A9B4E124DC704B008AB1A8 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A9B4E024DC704B008AB1A8 /* CardBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		38979F1D24050B1100B5D725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38979F2024050B1100B5D725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38979F2224050B1100B5D725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38979F2924050B9E00B5D725 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		38979F2B240511C100B5D725 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		38979F2D2405182F00B5D725 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		85A9B4E024DC704B008AB1A8 /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		38979F1524050B0F00B5D725 /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				38979F1624050B0F00B5D725 /* AppDelegate.swift */,
 				38979F1824050B0F00B5D725 /* ViewController.swift */,
+				85A9B4E024DC704B008AB1A8 /* CardBehavior.swift */,
+				38979F2D2405182F00B5D725 /* PlayingCardView.swift */,
 				38979F1A24050B0F00B5D725 /* Main.storyboard */,
+				38979F2924050B9E00B5D725 /* PlayingCard.swift */,
+				38979F2B240511C100B5D725 /* PlayingCardDeck.swift */,
 				38979F1D24050B1100B5D725 /* Assets.xcassets */,
-				38979F1F24050B1100B5D725 /* LaunchScreen.storyboard */,
+				38979F2824050B2600B5D725 /* Supporting Files  */,
 				38979F2224050B1100B5D725 /* Info.plist */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		38979F2824050B2600B5D725 /* Supporting Files  */ = {
+			isa = PBXGroup;
+			children = (
+				38979F1F24050B1100B5D725 /* LaunchScreen.storyboard */,
+				38979F1624050B0F00B5D725 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				38979F1924050B0F00B5D725 /* ViewController.swift in Sources */,
+				38979F2C240511C100B5D725 /* PlayingCardDeck.swift in Sources */,
+				38979F2A24050B9E00B5D725 /* PlayingCard.swift in Sources */,
+				38979F2E2405182F00B5D725 /* PlayingCardView.swift in Sources */,
 				38979F1724050B0F00B5D725 /* AppDelegate.swift in Sources */,
+				85A9B4E124DC704B008AB1A8 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE5L8K5GUR;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE5L8K5GUR;
 				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
